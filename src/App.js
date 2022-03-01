@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// // import './App.css';
+
+import TopNavFour from "./components/TopNavigation/TopNavFour";
+import HeroBannerFive from "./components/HeroBanner/HeroBannerFive";
+import FancyFeatureSeventeen from "./components/FancyFeature/FancyFeatureSeventeen";
+import FancyFeatureEighteen from "./components/FancyFeature/FancyFeatureEighteen";
+import FancyFeatureNineteen from "./components/FancyFeature/FancyFeatureNineteen";
+import CounterOne from "./components/Counter/CounterOne";
+import FeedbackFive from "./components/Testimonial/FeedbackFive";
+import FancyFeatureTwenty from "./components/FancyFeature/FancyFeatureTwenty";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          tofajjal
-        </a>
-      </header>
+      <TopNavFour/>
+      <HeroBannerFive/>
+      <FancyFeatureSeventeen/>
+      <FancyFeatureEighteen/>
+      <FancyFeatureNineteen/>
+      <CounterOne/>
+      <FeedbackFive/>
+      <FancyFeatureTwenty/>
     </div>
   );
 }
