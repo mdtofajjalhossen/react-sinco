@@ -7,8 +7,10 @@ import FancyFeatureSeventeen from "./components/FancyFeature/FancyFeatureSevente
 import FancyFeatureEighteen from "./components/FancyFeature/FancyFeatureEighteen";
 import FancyFeatureNineteen from "./components/FancyFeature/FancyFeatureNineteen";
 import CounterOne from "./components/Counter/CounterOne";
-import FeedbackFive from "./components/Testimonial/FeedbackFive";
+// import FeedbackFive from "./components/Testimonial/FeedbackFive";
 import FancyFeatureTwenty from "./components/FancyFeature/FancyFeatureTwenty";
+
+import FeedbackFive from "./components/Testimonial/FeedbackFive";
 
 function App() {
   return (
@@ -20,6 +22,12 @@ function App() {
       <FancyFeatureNineteen/>
       <CounterOne/>
       <FeedbackFive/>
+
+
+
+
+
+      {/*<FeedbackFive/>*/}
       <FancyFeatureTwenty/>
     </div>
   );

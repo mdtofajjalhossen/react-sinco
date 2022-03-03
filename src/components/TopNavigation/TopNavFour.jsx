@@ -1,17 +1,19 @@
 import React, {Fragment} from 'react';
+import logo_03 from '../../assets/images/logo/logo_03.png'
+import logo_01 from '../../assets/images/logo/logo_01.png'
 import '../../assets/css/animate.min.css'
 import '../../assets/css/custom-animation.css'
 import '../../assets/css/framework.css'
 import '../../assets/css/navbar.css'
-import '../../assets/css/responsive.css'
 import '../../assets/css/style.css'
+import '../../assets/css/responsive.css'
 function TopNavFour(props) {
     return (
         <Fragment>
             <header className="theme-main-menu sticky-menu theme-menu-four">
                 <div className="inner-content">
                     <div className="d-flex align-items-center">
-                        <div className="logo order-lg-0"><a href="index.html" className="d-block"><img src="images/logo/logo_03.png" alt="" width={90} /></a></div>
+                        <div className="logo order-lg-0"><a href="index.html" className="d-block"><img src={logo_03} alt="" width={90} /></a></div>
                         <div className="right-widget d-flex align-items-center ms-auto order-lg-3">
                             <div className="call-button d-none d-xl-block me-5">Call us <a href="#">(+880) 321 782 110</a></div>
                             <button className="menu-search-btn tran3s" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i className="bi bi-search" /></button>
@@ -23,7 +25,7 @@ function TopNavFour(props) {
                             </button>
                             <div className="collapse navbar-collapse" id="navbarNav">
                                 <ul className="navbar-nav">
-                                    <li className="d-block d-lg-none"><div className="logo"><a href="index.html"><img src="images/logo/logo_01.png" alt="" width={130} /></a></div></li>
+                                    <li className="d-block d-lg-none"><div className="logo"><a href="index.html"><img src={logo_01} alt="" width={130} /></a></div></li>
                                     <li className="nav-item active dropdown">
                                         <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Home</a>
                                         <ul className="dropdown-menu">
