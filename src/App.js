@@ -1,35 +1,24 @@
 // import logo from './logo.svg';
 // // import './App.css';
 
-import TopNavFour from "./components/TopNavigation/TopNavFour";
-import HeroBannerFive from "./components/HeroBanner/HeroBannerFive";
-import FancyFeatureSeventeen from "./components/FancyFeature/FancyFeatureSeventeen";
-import FancyFeatureEighteen from "./components/FancyFeature/FancyFeatureEighteen";
-import FancyFeatureNineteen from "./components/FancyFeature/FancyFeatureNineteen";
-import CounterOne from "./components/Counter/CounterOne";
-// import FeedbackFive from "./components/Testimonial/FeedbackFive";
-import FancyFeatureTwenty from "./components/FancyFeature/FancyFeatureTwenty";
 
-import FeedbackFive from "./components/Testimonial/FeedbackFive";
-import BlogThree from "./components/Blog/BlogThree";
-import FancyFeatureTwentyOne from "./components/FancyFeature/FancyFeatureTwentyOne";
+import TopNavTwo from "./components/TopNavigation/TopNavTwo";
+import HeroBannerTwo from "./components/HeroBanner/HeroBannerTwo";
+import CounterHomeTwoOne from "./components/Counter/CounterHomeTwoOne";
 import PartnerTwo from "./components/Partners/PartnerTwo";
+import PartnerTwoHomeTwo from "./components/Partners/PartnerTwoHomeTwo";
+import FancyFeatureFour from "./components/FancyFeature/FancyFeatureFour";
+import FancyFeatureTwo from "./components/FancyFeature/FancyFeatureTwo";
 
 function App() {
   return (
     <div className="main-page-wrapper">
-      <TopNavFour/>
-      <HeroBannerFive/>
-      <FancyFeatureSeventeen/>
-      <FancyFeatureEighteen/>
-      <FancyFeatureNineteen/>
-      <CounterOne/>
-      <FeedbackFive/>
-      <FancyFeatureTwenty/>
-        <BlogThree/>
-        <FancyFeatureTwentyOne/>
-        <PartnerTwo/>
-
+      <TopNavTwo/>
+      <HeroBannerTwo/>
+      <CounterHomeTwoOne/>
+      <PartnerTwoHomeTwo/>
+      <FancyFeatureFour/>
+      <FancyFeatureTwo/>
     </div>
   );
 }
