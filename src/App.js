@@ -11,10 +11,13 @@ import CounterOne from "./components/Counter/CounterOne";
 import FancyFeatureTwenty from "./components/FancyFeature/FancyFeatureTwenty";
 
 import FeedbackFive from "./components/Testimonial/FeedbackFive";
+import BlogThree from "./components/Blog/BlogThree";
+import FancyFeatureTwentyOne from "./components/FancyFeature/FancyFeatureTwentyOne";
+import PartnerTwo from "./components/Partners/PartnerTwo";
 
 function App() {
   return (
-    <div className="App">
+    <div className="main-page-wrapper">
       <TopNavFour/>
       <HeroBannerFive/>
       <FancyFeatureSeventeen/>
@@ -22,13 +25,11 @@ function App() {
       <FancyFeatureNineteen/>
       <CounterOne/>
       <FeedbackFive/>
-
-
-
-
-
-      {/*<FeedbackFive/>*/}
       <FancyFeatureTwenty/>
+        <BlogThree/>
+        <FancyFeatureTwentyOne/>
+        <PartnerTwo/>
+
     </div>
   );
 }
