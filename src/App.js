@@ -9,6 +9,7 @@ import PartnerTwo from "./components/Partners/PartnerTwo";
 import PartnerTwoHomeTwo from "./components/Partners/PartnerTwoHomeTwo";
 import FancyFeatureFour from "./components/FancyFeature/FancyFeatureFour";
 import FancyFeatureTwo from "./components/FancyFeature/FancyFeatureTwo";
+import FeedbackTwo from "./components/Testimonial/FeedbackTwo";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <PartnerTwoHomeTwo/>
       <FancyFeatureFour/>
       <FancyFeatureTwo/>
+      <FeedbackTwo/>
     </div>
   );
 }
