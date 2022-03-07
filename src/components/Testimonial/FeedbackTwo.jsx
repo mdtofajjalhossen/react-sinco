@@ -1,7 +1,9 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useState} from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+// import { MagnificPopup } from 'react-magnific-popup';
+// import { Popup } from 'react-magnific-popup';
 import shape_08 from '../../assets/images/shape/shape_08.svg'
 import shape_09 from '../../assets/images/shape/shape_09.svg'
 import img_01 from '../../assets/images/media/img_01.jpg'
@@ -13,11 +15,25 @@ import PLogo_2 from '../../assets/images/logo/Plogo-2.png'
 import PLogo_3 from '../../assets/images/logo/Plogo-3.png'
 import PLogo_4 from '../../assets/images/logo/Plogo-4.png'
 import icon_14 from '../../assets/images/icon/icon_14.svg'
-
+import ModalVideo from 'react-modal-video'
+import 'react-modal-video/css/modal-video.min.css'
+//
+// function FeedbackTwo(props) {
+//     const [isOpen, setOpen] = useState(false)
+//     return (
+//         <Fragment>
+//
+//             <React.Fragment>
+//                 <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="aXFSJTjVjw0" onClose={() => setOpen(false)} />
+//             </React.Fragment>
+//         </Fragment>
+//     );
+// }
+//
+// export default FeedbackTwo;
 
 
 function FeedbackTwo(props) {
-
     var settings = {
         dots: false,
         slidesToShow: 3,
@@ -56,12 +72,15 @@ function FeedbackTwo(props) {
             }
         ]
 
-    };
 
+    };
+    const [isOpen, setOpen] = useState(false)
     return (
 
-
         <div className="feedback-section-two mt-170 xl-mt-100 md-mt-60" data-aos="fade-up">
+            <React.Fragment>
+                <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="aXFSJTjVjw0" onClose={() => setOpen(false)} />
+            </React.Fragment>
             <img src={shape_08} alt="" className="shapes shape-one" />
             <img src={shape_09} alt="" className="shapes shape-two" />
             <div className="container">
@@ -92,9 +111,10 @@ function FeedbackTwo(props) {
                     <div className="feedback-block-two d-sm-flex">
                         <div className="img-meta">
                             <img src={img_01} alt="" />
-                            <a className="fancybox video-icon" data-fancybox href="https://www.youtube.com/embed/aXFSJTjVjw0">
+                            <a className="fancybox video-icon" data-fancybox onClick={()=> setOpen(true)}>
                                 <i className="bi bi-play-fill" />
                             </a>
+
                         </div>
                         <div className="text-wrapper">
                             <div className="icon d-flex align-items-end"><img src={PLogo_15} alt="" /></div>
@@ -114,7 +134,7 @@ function FeedbackTwo(props) {
                     <div className="feedback-block-two d-sm-flex">
                         <div className="img-meta">
                             <img src={img_02} alt="" />
-                            <a className="fancybox video-icon" data-fancybox href="https://www.youtube.com/embed/aXFSJTjVjw0">
+                            <a className="fancybox video-icon" data-fancybox onClick={()=> setOpen(true)}>
                                 <i className="bi bi-play-fill" />
                             </a>
                         </div>
@@ -135,7 +155,7 @@ function FeedbackTwo(props) {
                     <div className="feedback-block-two d-sm-flex">
                         <div className="img-meta">
                             <img src={img_03} alt="" />
-                            <a className="fancybox video-icon" data-fancybox href="https://www.youtube.com/embed/aXFSJTjVjw0">
+                            <a className="fancybox video-icon" data-fancybox onClick={()=> setOpen(true)}>
                                 <i className="bi bi-play-fill" />
                             </a>
                         </div>
@@ -156,7 +176,7 @@ function FeedbackTwo(props) {
                     <div className="feedback-block-two d-sm-flex">
                         <div className="img-meta">
                             <img src={img_04} alt="" />
-                            <a className="fancybox video-icon" data-fancybox href="https://www.youtube.com/embed/aXFSJTjVjw0">
+                            <a className="fancybox video-icon" data-fancybox onClick={()=> setOpen(true)}>
                                 <i className="bi bi-play-fill" />
                             </a>
                         </div>
@@ -174,11 +194,9 @@ function FeedbackTwo(props) {
                 </div>
             </Slider>
         </div> //feedback-section-two
-
     );
 }
 
 export default FeedbackTwo;
-
 
 

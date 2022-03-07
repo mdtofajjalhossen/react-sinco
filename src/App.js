@@ -10,6 +10,8 @@ import PartnerTwoHomeTwo from "./components/Partners/PartnerTwoHomeTwo";
 import FancyFeatureFour from "./components/FancyFeature/FancyFeatureFour";
 import FancyFeatureTwo from "./components/FancyFeature/FancyFeatureTwo";
 import FeedbackTwo from "./components/Testimonial/FeedbackTwo";
+import TestFileTest from "./components/Testimonial/TestFileTest";
+import HeroBannerFive from "./components/HeroBanner/HeroBannerFive";
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
       <FancyFeatureFour/>
       <FancyFeatureTwo/>
       <FeedbackTwo/>
+      {/*<TestFileTest/>*/}
     </div>
   );
 }
