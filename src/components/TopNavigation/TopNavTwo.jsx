@@ -1,11 +1,11 @@
 import React, {Fragment} from 'react';
 import logo_01 from '../../assets/images/logo/logo_01.png'
-import '../../assets/css/animate.min.css'
-import '../../assets/css/custom-animation.css'
-import '../../assets/css/framework.css'
-import '../../assets/css/navbar.css'
-import '../../assets/css/style.css'
-import '../../assets/css/responsive.css'
+// import '../../assets/css/animate.min.css'
+// import '../../assets/css/custom-animation.css'
+// import '../../assets/css/framework.css'
+// import '../../assets/css/navbar.css'
+// import '../../assets/css/style.css'
+// import '../../assets/css/responsive.css'
 function TopNavTwo(props) {
     return (
         <Fragment>

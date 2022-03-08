@@ -25,7 +25,7 @@
 /*----------- Fancybox css -------*/
 @import url("../vendor/fancybox/dist/jquery.fancybox.min.css");
 /*----------- Slick Slider -------*/
-@import url("../vendor/slick/slick");
+@import url("../vendor/slick/slick.css");
 /*----Animate css----*/
 @import url("animate.min.css");
 @import url("custom-animation.css");
