@@ -171,7 +171,7 @@ function FeedbackTwo(props) {
                     </div> {/* /.feedback-block-two */}
                 </div>
                 </div>
-                    <div className="feedback_slider_two">
+                <div className="feedback_slider_two">
                 <div className="item">
                     <div className="feedback-block-two d-sm-flex">
                         <div className="img-meta">

@@ -1,9 +1,14 @@
 import React, {Fragment} from 'react';
+import shape_16 from '../../assets/images/shape/shape_16.svg'
+import shape_17 from '../../assets/images/shape/shape_17.svg'
 import logo_01 from '../../assets/images/logo/logo_01.png'
-function FooterOne(props) {
+
+function FooterTwo(props) {
     return (
         <Fragment>
-            <div className="footer-style-one theme-basic-footer">
+            <div className="footer-style-two theme-basic-footer">
+                <img src={shape_16} alt="" className="shapes shape-one" />
+                <img src={shape_17} alt="" className="shapes shape-two" />
                 <div className="container">
                     <div className="inner-wrapper">
                         <div className="row">
@@ -40,7 +45,7 @@ function FooterOne(props) {
                                     <h5 className="footer-title">Subscribe </h5>
                                     <p>Join over <span>68,000</span> people getting our emails</p>
                                     <form action="#">
-                                        <input type="email" placeholder="Enter your email" required />
+                                        <input type="email" placeholder="Enter your email" required/>
                                         <button>Sign Up</button>
                                     </form>
                                     <div className="info">We only send interesting and relevant emails.</div>
@@ -59,11 +64,10 @@ function FooterOne(props) {
                         </div>
                     </div> {/* /.inner-wrapper */}
                 </div>
-            </div> {/* /.footer-style-one */}
-
+            </div> {/* /.footer-style-two */}
 
         </Fragment>
     );
 }
 
-export default FooterOne;
+export default FooterTwo;
