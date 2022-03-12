@@ -43,7 +43,8 @@ function FeedbackTwo(props) {
         speed: 2000,
         autoplaySpeed: 3000,
         centerPadding: 0,
-        autoplay: true,
+        // autoplay: true,
+        autoplay: false,
         infinite: true,
         responsive: [
             {
@@ -101,98 +102,93 @@ function FeedbackTwo(props) {
             <div className="inner-content mt-60 md-mt-40">
                 <div className="slider-wrapper">
                     <div className="feedback_slider_two">
+                        <Slider {...settings}>
 
-                    </div> {/* /.feedback_slider_two */}
+                            <div className="item">
+                                <div className="feedback-block-two d-sm-flex">
+                                    <div className="img-meta">
+                                        <img src={img_01} alt="" />
+                                        <a className="fancybox video-icon" data-fancybox onClick={()=> setOpen(true)}>
+                                            <i className="bi bi-play-fill" />
+                                        </a>
+
+                                    </div>
+                                    <div className="text-wrapper">
+                                        <div className="icon d-flex align-items-end"><img src={PLogo_15} alt="" /></div>
+                                        <div className="camp-name">Giant cloud service inc</div>
+                                        <p>We’v 9,000 agents across around the country, Find agents near your neighborhood.</p>
+                                        <a href="#" className="read-btn d-flex align-items-center justify-content-between">
+                                            <span>Continue Reading</span>
+                                            <img src={icon_14} alt="" className="arrow" />
+                                        </a>
+                                    </div> {/* /.text-wrapper */}
+                                </div> {/* /.feedback-block-two */}
+                            </div>
+
+                            <div className="item">
+                                <div className="feedback-block-two d-sm-flex">
+                                    <div className="img-meta">
+                                        <img src={img_02} alt="" />
+                                        <a className="fancybox video-icon" data-fancybox onClick={()=> setOpen(true)}>
+                                            <i className="bi bi-play-fill" />
+                                        </a>
+                                    </div>
+                                    <div className="text-wrapper">
+                                        <div className="icon d-flex align-items-end"><img src={PLogo_4} alt="" /></div>
+                                        <div className="camp-name">UK Marketing Agency.</div>
+                                        <p>We’v 9,000 agents across around the country, Find agents near your neighborhood.</p>
+                                        <a href="#" className="read-btn d-flex align-items-center justify-content-between">
+                                            <span>Continue Reading</span>
+                                            <img src={icon_14} alt="" className="arrow" />
+                                        </a>
+                                    </div> {/* /.text-wrapper */}
+                                </div> {/* /.feedback-block-two */}
+                            </div>
+
+                            <div className="item">
+                                <div className="feedback-block-two d-sm-flex">
+                                    <div className="img-meta">
+                                        <img src={img_03} alt="" />
+                                        <a className="fancybox video-icon" data-fancybox onClick={()=> setOpen(true)}>
+                                            <i className="bi bi-play-fill" />
+                                        </a>
+                                    </div>
+                                    <div className="text-wrapper">
+                                        <div className="icon d-flex align-items-end"><img src={PLogo_2} alt="" /></div>
+                                        <div className="camp-name">Netflix Marketing Agency.</div>
+                                        <p>We’v 9,000 agents across around the country, Find agents near your neighborhood.</p>
+                                        <a href="#" className="read-btn d-flex align-items-center justify-content-between">
+                                            <span>Continue Reading</span>
+                                            <img src={icon_14} alt="" className="arrow" />
+                                        </a>
+                                    </div> {/* /.text-wrapper */}
+                                </div> {/* /.feedback-block-two */}
+                            </div>
+
+                            <div className="item">
+                                <div className="feedback-block-two d-sm-flex">
+                                    <div className="img-meta">
+                                        <img src={img_04} alt="" />
+                                        <a className="fancybox video-icon" data-fancybox onClick={()=> setOpen(true)}>
+                                            <i className="bi bi-play-fill" />
+                                        </a>
+                                    </div>
+                                    <div className="text-wrapper">
+                                        <div className="icon d-flex align-items-end"><img src={PLogo_3} alt="" /></div>
+                                        <div className="camp-name">Sinco Digital Agency.</div>
+                                        <p>We’v 9,000 agents across around the country, Find agents near your neighborhood.</p>
+                                        <a href="#" className="read-btn d-flex align-items-center justify-content-between">
+                                            <span>Continue Reading</span>
+                                            <img src={icon_14} alt="" className="arrow" />
+                                        </a>
+                                    </div> {/* /.text-wrapper */}
+                                </div> {/* /.feedback-block-two */}
+                            </div>
+                        </Slider>
+                    </div>
                 </div> {/* /.slider-wrapper */}
             </div> {/* /.inner-content */}
-            <Slider {...settings}>
-                <div className="feedback_slider_two">
-                <div className="item">
-                    <div className="feedback-block-two d-sm-flex">
-                        <div className="img-meta">
-                            <img src={img_01} alt="" />
-                            <a className="fancybox video-icon" data-fancybox onClick={()=> setOpen(true)}>
-                                <i className="bi bi-play-fill" />
-                            </a>
 
-                        </div>
-                        <div className="text-wrapper">
-                            <div className="icon d-flex align-items-end"><img src={PLogo_15} alt="" /></div>
-                            <div className="camp-name">Giant cloud service inc</div>
-                            <p>We’v 9,000 agents across around the country, Find agents near your neighborhood.</p>
-                            <a href="#" className="read-btn d-flex align-items-center justify-content-between">
-                                <span>Continue Reading</span>
-                                <img src={icon_14} alt="" className="arrow" />
-                            </a>
-                        </div> {/* /.text-wrapper */}
-                    </div> {/* /.feedback-block-two */}
-                </div>
-                </div>
-
-                <div className="feedback_slider_two">
-                <div className="item">
-                    <div className="feedback-block-two d-sm-flex">
-                        <div className="img-meta">
-                            <img src={img_02} alt="" />
-                            <a className="fancybox video-icon" data-fancybox onClick={()=> setOpen(true)}>
-                                <i className="bi bi-play-fill" />
-                            </a>
-                        </div>
-                        <div className="text-wrapper">
-                            <div className="icon d-flex align-items-end"><img src={PLogo_4} alt="" /></div>
-                            <div className="camp-name">UK Marketing Agency.</div>
-                            <p>We’v 9,000 agents across around the country, Find agents near your neighborhood.</p>
-                            <a href="#" className="read-btn d-flex align-items-center justify-content-between">
-                                <span>Continue Reading</span>
-                                <img src={icon_14} alt="" className="arrow" />
-                            </a>
-                        </div> {/* /.text-wrapper */}
-                    </div> {/* /.feedback-block-two */}
-                </div>
-                </div>
-                <div className="feedback_slider_two">
-                <div className="item">
-                    <div className="feedback-block-two d-sm-flex">
-                        <div className="img-meta">
-                            <img src={img_03} alt="" />
-                            <a className="fancybox video-icon" data-fancybox onClick={()=> setOpen(true)}>
-                                <i className="bi bi-play-fill" />
-                            </a>
-                        </div>
-                        <div className="text-wrapper">
-                            <div className="icon d-flex align-items-end"><img src={PLogo_2} alt="" /></div>
-                            <div className="camp-name">Netflix Marketing Agency.</div>
-                            <p>We’v 9,000 agents across around the country, Find agents near your neighborhood.</p>
-                            <a href="#" className="read-btn d-flex align-items-center justify-content-between">
-                                <span>Continue Reading</span>
-                                <img src={icon_14} alt="" className="arrow" />
-                            </a>
-                        </div> {/* /.text-wrapper */}
-                    </div> {/* /.feedback-block-two */}
-                </div>
-                </div>
-                <div className="feedback_slider_two">
-                <div className="item">
-                    <div className="feedback-block-two d-sm-flex">
-                        <div className="img-meta">
-                            <img src={img_04} alt="" />
-                            <a className="fancybox video-icon" data-fancybox onClick={()=> setOpen(true)}>
-                                <i className="bi bi-play-fill" />
-                            </a>
-                        </div>
-                        <div className="text-wrapper">
-                            <div className="icon d-flex align-items-end"><img src={PLogo_3} alt="" /></div>
-                            <div className="camp-name">Sinco Digital Agency.</div>
-                            <p>We’v 9,000 agents across around the country, Find agents near your neighborhood.</p>
-                            <a href="#" className="read-btn d-flex align-items-center justify-content-between">
-                                <span>Continue Reading</span>
-                                <img src={icon_14} alt="" className="arrow" />
-                            </a>
-                        </div> {/* /.text-wrapper */}
-                    </div> {/* /.feedback-block-two */}
-                </div>
-                </div>
-            </Slider>
         </div> //feedback-section-two
     );
 }
