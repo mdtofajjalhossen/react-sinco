@@ -2,24 +2,48 @@ import React, {Fragment} from 'react';
 import icon_02 from '../../assets/images/icon/icon_02.svg'
 import icon_03 from '../../assets/images/icon/icon_03.svg'
 import icon_04 from '../../assets/images/icon/icon_04.svg'
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 function FancyFeatureOne(props) {
-
     var settings = {
         dots: false,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         initialSlide: 0,
         arrows: false,
         speed: 2000,
         autoplaySpeed: 3000,
         centerPadding: 0,
-        autoplay: true,
+        autoplay: false,
         infinite: true,
-        centerMode: true,
-        fade: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+
 
     };
 
@@ -39,8 +63,8 @@ function FancyFeatureOne(props) {
                         </div>
                     </div>
                 </div> {/* /.container */}
-                <div className="slider-wrapper">
 
+                <div className="slider-wrapper">
                     <div className="service_slider_one">
                         <Slider {...settings}>
                         <div className="item">
@@ -74,11 +98,10 @@ function FancyFeatureOne(props) {
                                 <a href="service-details-V1.html" className="btn-two">Learn more <i className="fas fa-chevron-right" /></a>
                             </div> {/* /.block-style-one */}
                         </div> {/* /.item */}
-
-                    </Slider>
+                        </Slider>
                     </div>
-
                 </div> {/* /.slider-wrapper */}
+
             </div> {/* /.fancy-feature-one */}
 
         </Fragment>

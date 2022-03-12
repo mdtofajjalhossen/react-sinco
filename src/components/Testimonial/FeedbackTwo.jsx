@@ -43,8 +43,7 @@ function FeedbackTwo(props) {
         speed: 2000,
         autoplaySpeed: 3000,
         centerPadding: 0,
-        // autoplay: true,
-        autoplay: false,
+        autoplay: true,
         infinite: true,
         responsive: [
             {
