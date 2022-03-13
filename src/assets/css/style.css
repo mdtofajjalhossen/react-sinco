@@ -3007,6 +3007,7 @@ body .btn-eight:hover {
   position: relative;
   z-index: 5;
   /* background: url(../images/assets/bg_07.svg) no-repeat center top; */
+   background: url("../../assets/images/img/bg_07.svg") no-repeat center top;
   background-size: cover;
   padding: 235px 0 320px;
 }

@@ -1,16 +1,13 @@
 
 import React, {Component,Fragment} from 'react';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-
 import icon_34 from '../../assets/images/icon/icon_34.svg'
 import img_08 from '../../assets/images/media/img_08.jpg'
 import img_09 from '../../assets/images/media/img_09.jpg'
 import img_10 from '../../assets/images/media/img_10.jpg'
 import img_11 from '../../assets/images/media/img_11.jpg'
-
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 class FeedbackFive extends Component {
     render() {
