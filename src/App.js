@@ -16,6 +16,8 @@ import FooterOne from "./components/Footer/FooterOne";
 import FancyFeatureOne from "./components/FancyFeature/FancyFeatureOne";
 import CounterHomeThreeOne from "./components/Counter/CounterHomeThreeOne";
 import PortfolioGalleryOne from "./components/Portfolio/PortfolioGalleryOne";
+import PricingOne from "./components/Pricing/PricingOne";
+import FeedbackOne from "./components/Testimonial/FeedbackOne";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <CounterHomeThreeOne/>
         <FancyFeatureThree/>
         <PortfolioGalleryOne/>
+        <PricingOne/>
+        <FeedbackOne/>
         <PartnerOne/>
         <BlogOne/>
         <AddressOne/>

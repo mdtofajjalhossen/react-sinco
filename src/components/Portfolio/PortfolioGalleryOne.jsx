@@ -4,7 +4,6 @@ import img_02 from '../../assets/images/gallery/img_02.jpg'
 import img_03 from '../../assets/images/gallery/img_03.jpg'
 import img_04 from '../../assets/images/gallery/img_04.jpg'
 import img_05 from '../../assets/images/gallery/img_05.jpg'
-// import React, { useEffect } from "react";
 import { Fancybox as NativeFancybox } from "@fancyapps/ui/dist/fancybox.esm.js";
 import "@fancyapps/ui/dist/fancybox.css";
 import Slider from "react-slick";
@@ -13,7 +12,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 function PortfolioGalleryOne(props) {
     const delegate = props.delegate || "[data-fancybox]";
-
     useEffect(() => {
         const opts = props.options || {};
 
@@ -61,8 +59,6 @@ function PortfolioGalleryOne(props) {
                 }
             }
         ]
-
-
     };
 
     return (
@@ -144,8 +140,6 @@ function PortfolioGalleryOne(props) {
                     </div> {/* /.slider-wrapper */}
                 </div>
             </div> {/* /.portfolio-gallery-one */}
-
-
         </Fragment>
     );
 }
