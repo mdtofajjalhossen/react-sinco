@@ -12,7 +12,7 @@ import FancyFeatureSeven from "../../components/FancyFeature/FancyFeatureSeven";
 import BlogTwo from "../../components/Blog/BlogTwo";
 import FancyShortBannerOne from "../../components/CallToAction/FancyShortBannerOne";
 import FooterTwo from "../../components/Footer/FooterTwo";
-import ScrollTop from "../../components/BackToTop/ScrollTop";
+import ScrollTop from "../../components/BackToTop/ScrollToTop";
 
 function HomeTwo(props) {
         return (

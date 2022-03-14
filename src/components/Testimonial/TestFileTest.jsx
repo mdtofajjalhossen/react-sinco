@@ -1,32 +1,52 @@
-import React, {Component} from 'react'
-import ReactDOM from 'react-dom'
-import ModalVideo from 'react-modal-video'
-// @import 'node_modules/react-modal-video/scss/modal-video.scss';
-import 'react-modal-video/css/modal-video.min.css'
+import React from 'react';
+import { Line, Circle, ProgressProps } from 'rc-progress';
 
-class TestFileTest extends Component {
-
-    constructor () {
-        super()
+class TestFileTest extends React.Component<ProgressProps, any> {
+    constructor(props) {
+        super(props);
         this.state = {
-            isOpen: false
+            percent: 0,
+        };
+        this.increase = this.increase.bind(this);
+        this.restart = this.restart.bind(this);
+    }
+
+    // private tm: number;
+
+    componentDidMount() {
+        this.increase();
+    }
+
+    increase() {
+        const { percent } = this.state;
+        const newPercent = percent + 1;
+        if (newPercent >= 100) {
+            clearTimeout(this.tm);
+            return;
         }
-        this.openModal = this.openModal.bind(this)
+        this.setState({ percent: newPercent });
+        this.tm = setTimeout(this.increase, 10);
     }
 
-    openModal () {
-        this.setState({isOpen: true})
+    restart() {
+        clearTimeout(this.tm);
+        this.setState({ percent: 0 }, () => {
+            this.increase();
+        });
     }
 
-    render () {
+    render() {
+        const { percent } = this.state;
         return (
-            <React.Fragment>
-                <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='L61p2uyiMSo' onClose={() => this.setState({isOpen: false})} />
-                <button onClick={this.openModal}>Open</button>
-            </React.Fragment>
-        )
+            <div style={{ margin: 10, width: 200 }}>
+                <Circle strokeWidth={6} percent={percent} />
+                <Line strokeWidth={4} percent={percent} />
+                <button type="button" onClick={this.restart}>
+                    Restart
+                </button>
+            </div>
+        );
     }
 }
-
 
 export default TestFileTest;

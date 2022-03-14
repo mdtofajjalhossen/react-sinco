@@ -301,7 +301,7 @@ h6 {
   cursor: pointer;
   border-radius: 50%;
   background: var(--prime-three);
-  display: none;
+  /*display: none;*/
   transition: all 0.3s ease-in-out;
 }
 .scroll-top:after {
